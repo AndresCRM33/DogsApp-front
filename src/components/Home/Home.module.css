@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/fondo3.png");
+    /* background-repeat: no-repeat; */
+    background-blend-mode: color-dodge;
+    /* background-size: 100%; */
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 10px;
+}
+
+.paginado{
+    margin-top: 25px;
+}
+
+.filters{
+    display: flex;
+    /* flex-direction: column; */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.filters div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filters h4{
+    color: rgb(225, 229, 255);
+    text-shadow: 0px 0px 5px rgb(147, 147, 150);
+    margin-right: 20px;
+}
+
+.filters p{
+    color: rgb(233, 233, 233);
+    font-weight: bolder;
+}
+
+
+.filtersAndOrders{
+    margin: 0px;
+    padding: 10px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.144), inset -3px -3px 10px rgba(0, 0, 0, 0.13);
+}
+
+select{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(115, 115, 117);
+}
+
+.loader{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .filtersAndOrders{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+}

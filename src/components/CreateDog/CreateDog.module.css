@@ -1,0 +1,175 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../../images/fondo3.png");
+}
+
+.tittle{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.formulary{
+    position: relative;
+    background-color: rgb(92, 92, 92);
+    padding: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.363);
+    z-index: 100;
+}
+
+.error{
+    color: rgb(255, 77, 77);
+    margin: 0px;
+    font-weight: bolder;
+    margin-bottom: 18px;
+}
+
+.inputError{
+    margin: 10px;
+    width: 400px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+    border-color: red;
+    outline: none;
+    background-color: rgba(213, 236, 255, 0.527);
+    transition: all 0.3s;
+}
+
+.input{
+    margin: 10px;
+    width: 400px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(213, 236, 255, 0.527);
+    transition: all 0.3s;
+}
+
+.input:hover{
+    background-color: rgba(213, 236, 255, 0.719);
+}
+
+.input:focus{
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.171);
+    background-color: rgb(225, 253, 255);
+}
+
+.selectTemps{
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+}
+
+.image{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: -250px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    z-index: 90;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+}
+
+/* .image2{
+    position: absolute;
+    top: 40%;
+    bottom: 0%;
+    right: -250px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    z-index: 90;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+} */
+
+.temperamentList{
+    display: flex;
+}
+
+.tempsSelect{
+    display: flex;
+    margin: 10px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 50px;
+    padding-left: 10px;
+}
+
+.tempsSelect p{
+    position: relative;
+    color: white;
+}
+
+.tempsSelect button{
+    border: none;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 130, 130);
+    color: white;
+    transition: all 0.3s;
+}
+
+.tempsSelect button:hover{
+    background-color: rgb(194, 39, 39);
+}
+
+.label{
+    color: white;
+    text-shadow: 0px 0px 5px white;
+}
+
+.submitButton, .homeButton{
+    margin: 10px;
+    height: 50px;
+    width: 75px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    /* border: 2px solid rgb(190, 69, 201); */
+    border: none;
+    background-color: rgb(184, 186, 189);
+    transition: all 0.3s;
+}
+
+.submitButton:hover, .homeButton:hover{
+    -shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    background-color: #23c483;
+    transform: translateY(-4px);
+    color: white;
+}
+
+.submitButton:active, .homeButton:active{
+    transform: translateY(-1px);
+}
+
+.homeButton{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 200;
+}
