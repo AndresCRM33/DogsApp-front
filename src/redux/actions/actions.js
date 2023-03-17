@@ -5,7 +5,7 @@
 import axios from "axios"
 
 // const host = "http://localhost:3001"
-const host = "https://back-pi-production-3ad5.up.railway.app"
+const host = "https://back-pi-production-696d.up.railway.app"
 
 export const getAllDogs = () => dispatch => {
     return(
