@@ -12,7 +12,8 @@ function App() {
         <Route exact path="/" element={<LandinPage/>}/>
         <Route path="/Home" element={<Home/>}/>
         <Route path="/dogs/:id" element={<DogDetail/>}/>
-        <Route path="/dog/create/" element={<CreateDog/>}/>
+        {/* <Route path="/dog/create/" element={<CreateDog/>}/> */}
+        <Route exact path="/Home/dog/create/" element={<CreateDog/>}/>
       </Routes>
     </div>
   );
